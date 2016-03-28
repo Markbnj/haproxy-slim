@@ -22,9 +22,9 @@ the principle of keeping containers immutable.
 In an orchestrated environment like kubernetes, for example, what you would
 want is something like this:
 
-1) Push updated config to a repo
-2) Build system kicks off and builds an image with the new config
-3) Do a graceful update
+  1) Push updated config to a repo
+  2) Build system kicks off and builds an image with the new config
+  3) Do a graceful update
 
 There's a lot in (3) but I don't want to go down that hole here. The main
 thing is that you're rebuilding your image and redeploying it. The new image
